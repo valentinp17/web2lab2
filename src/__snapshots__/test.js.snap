@@ -1,0 +1,301 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render AddCity 1`] = `
+<div
+  className="addCity"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      placeholder="Type the city here"
+    />
+    <button>
+      add city
+    </button>
+  </form>
+</div>
+`;
+
+exports[`should render CityList with 2 cities 1`] = `
+<ConnectedCityList
+  addCity={[Function]}
+  cities={
+    Array [
+      Object {
+        "humidity": 100,
+        "icon": "50n",
+        "isLoading": false,
+        "name": "Moscow",
+        "pressure": 1009,
+        "temp": -1.1,
+        "timeAdded": 1577384881715,
+        "wind": 2,
+      },
+      Object {
+        "humidity": 29,
+        "icon": "03n",
+        "isLoading": false,
+        "name": "Kek",
+        "pressure": 1007,
+        "temp": 25.66,
+        "timeAdded": 1577384888217,
+        "wind": 0.3,
+      },
+    ]
+  }
+  deleteCity={[Function]}
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+  updateWeather={[Function]}
+/>
+`;
+
+exports[`should render CityList with no cities 1`] = `
+<ConnectedCityList
+  addCity={[Function]}
+  cities={Array []}
+  deleteCity={[Function]}
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+  updateWeather={[Function]}
+/>
+`;
+
+exports[`should render DefaultCityInfo with geo 1`] = `
+<ConnectedDefaultCityInfo
+  defaultCity={
+    Object {
+      "latitude": 55,
+      "longitude": 55,
+      "name": "санкт-петербург",
+    }
+  }
+  getLocation={[Function]}
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+/>
+`;
+
+exports[`should render DefaultCityInfo without geo 1`] = `
+<ConnectedDefaultCityInfo
+  defaultCity={
+    Object {
+      "latitude": undefined,
+      "longitude": undefined,
+      "name": "санкт-петербург",
+    }
+  }
+  getLocation={[Function]}
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+/>
+`;
+
+exports[`should render DeleteCity 1`] = `
+<div
+  className="delete"
+>
+  <button
+    className="deleteButton"
+    onClick={[Function]}
+  >
+    delete city
+  </button>
+</div>
+`;
+
+exports[`should render LocationWeatherInfo with loading 1`] = `
+<div
+  key="true"
+>
+  <div />
+  <div>
+    <p>
+      Грузится...
+    </p>
+  </div>
+</div>
+`;
+
+exports[`should render LocationWeatherInfo with weather 1`] = `
+<div
+  key="false"
+>
+  <div />
+  <div
+    className="weather"
+  >
+    <div
+      className="city"
+    >
+      Moscow
+    </div>
+    <div
+      className="img"
+    >
+      <img
+        alt="weather icon"
+        src="http://openweathermap.org/img/wn/50n@2x.png"
+      />
+    </div>
+    <div
+      className="infoType"
+    >
+      <div>
+        temperature
+      </div>
+      <div>
+        -1.1
+      </div>
+    </div>
+    <div
+      className="infoType"
+    >
+      <div>
+        humidity
+      </div>
+      <div>
+        100
+      </div>
+    </div>
+    <div
+      className="infoType"
+    >
+      <div>
+        pressure
+      </div>
+      <div>
+        1009
+      </div>
+    </div>
+    <div
+      className="infoType"
+    >
+      <div>
+        wind
+      </div>
+      <div>
+        2
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should render LocationWeatherInfo with weather for main city 1`] = `
+<div
+  key="false"
+>
+  <div />
+  <div
+    className="weather"
+  >
+    <div
+      className="defaultCity"
+    >
+      Kolomyagi
+    </div>
+    <div
+      className="img"
+    >
+      <img
+        alt="weather icon"
+        src="http://openweathermap.org/img/wn/04n@2x.png"
+      />
+    </div>
+    <div
+      className="infoType"
+    >
+      <div>
+        temperature
+      </div>
+      <div>
+        0.58
+      </div>
+    </div>
+    <div
+      className="infoType"
+    >
+      <div>
+        humidity
+      </div>
+      <div>
+        86
+      </div>
+    </div>
+    <div
+      className="infoType"
+    >
+      <div>
+        pressure
+      </div>
+      <div>
+        1013
+      </div>
+    </div>
+    <div
+      className="infoType"
+    >
+      <div>
+        wind
+      </div>
+      <div>
+        3
+      </div>
+    </div>
+    <div
+      className="infoType"
+    >
+      <div>
+        longitude
+      </div>
+      <div>
+        30.26
+      </div>
+    </div>
+    <div
+      className="infoType"
+    >
+      <div>
+        latitude
+      </div>
+      <div>
+        60.02
+      </div>
+    </div>
+  </div>
+</div>
+`;
